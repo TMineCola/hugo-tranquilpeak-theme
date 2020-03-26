@@ -2,10 +2,16 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
-$menlo:                 Menlo, Consolas, monospace;
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+//$open-sans:            'cwTeXYen', 'Open Sans';
+//$open-sans-sans-serif: 'cwTeXYen', 'Open Sans' , 'sans-serif';
+//$merriweather-serif:   'cwTeXYen', 'Merriweather', 'serif';
+//$menlo:                 'cwTeXYen', 'Menlo', 'Consolas', 'monospace';
+
+$open-sans:            'Noto Sans TC';
+$open-sans-sans-serif: 'Noto Sans TC';
+$merriweather-serif:   'Noto Sans TC';
+$menlo:                 'Noto Sans TC';
 
 $font-family-base: $open-sans-sans-serif;
 
@@ -26,24 +32,38 @@ $font-families: (
 );
 
 // equal to 15px
-$font-size-base:      1.6rem;
+// $font-size-base:      1.6rem;
+// $font-color-base:     #5d686f;
+// $line-height-base:    1.9em;
+// $letter-spacing-base: 0.01em;
+$font-size-base:      1.8rem;
 $font-color-base:     #5d686f;
-$line-height-base:    1.9em;
-$letter-spacing-base: 0.01em;
+$line-height-base:    2.0em;
+$letter-spacing-base: 0.015em;
 
 // Reduction of font size base on small screen and down
 $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
 // Font size : (X.Xrem = XXpx, 1.0rem = 10px)
+// $font-size: (
+//     'xxlarge': 2rem,
+//     'xlarge': 1.8rem,
+//     'large':  1.7rem,
+//     'base':   $font-size-base,
+//     'medium': 1.5rem,
+//     'small':  1.3rem,
+//     'xsmall': 1rem
+// );
 $font-size: (
-    'xxlarge': 2rem,
-    'xlarge': 1.8rem,
-    'large':  1.7rem,
+    'xxlarge': 2.2rem,
+    'xlarge': 2.0rem,
+    'large':  1.9rem,
     'base':   $font-size-base,
-    'medium': 1.5rem,
-    'small':  1.3rem,
-    'xsmall': 1rem
+    'medium': 1.7rem,
+    'small':  1.5rem,
+    'xsmall': 1.2rem
 );
+
 
 // Colors
 $colors: (
