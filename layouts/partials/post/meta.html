@@ -6,8 +6,6 @@
       </time>
     {{ end }}
     {{ partial "post/category.html" . }}
-    <span>
-      ｜大概要看 {{ math.Round (div (countwords .Content) 220.0) }} 分鐘
-    </span>
+    <span>｜大概要看 {{ math.Round (div (countwords .Content) 220.0) }} 分鐘</span>
   </div>
 {{ end }}
