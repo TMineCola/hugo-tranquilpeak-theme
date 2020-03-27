@@ -19,6 +19,11 @@
             <div class="main-content-wrap">
               {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
               {{ partial "post/gallery.html" . }}
+              {{ if not (eq .Params.showDate false)  }}
+                <div class="main-content-wrap-modifiedDate">
+                  <span>最後修改日期 / {{ dateFormat "2006-01-02" .Params.modified }}</span>
+                </div>
+              {{ end }}
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
