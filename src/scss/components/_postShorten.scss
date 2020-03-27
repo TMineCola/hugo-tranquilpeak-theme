@@ -44,6 +44,7 @@
     .postShorten-excerpt_link {
         // Bring the post's link nearest of the excerpt
         margin-top: -15px;
+
     }
     .postShorten-meta,
     .postShorten-readingtime,
@@ -72,6 +73,9 @@
         margin-top: 15px;
         p:nth-child(1) {
             margin: 0
+        }
+        p:nth-child(2) {
+            text-align: right;
         }
     }
     .postShorten-content {
