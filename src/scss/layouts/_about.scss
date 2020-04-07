@@ -66,6 +66,9 @@
             line-height: $line-height-base;
             font-weight: 400;
             color:       map-get($colors, base);
+            #about-card-email-br {
+                display: none;
+            }
         }
     }
 }
@@ -96,6 +99,9 @@
             #about-card-email {
                 > i {
                     margin: 0;
+                }
+                #about-card-email-br {
+                    display: block;
                 }
             }
         }

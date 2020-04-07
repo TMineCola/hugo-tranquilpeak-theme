@@ -27,6 +27,7 @@
     {{ with .Site.Author.email }}
       <div id="about-card-email">
         <i class="fa fa-envelope"></i>
+        <br id="about-card-email-br" />
         {{ . | markdownify }}
       </div>
     {{ end }}
